@@ -1,5 +1,5 @@
-```bash - ниже запуск для Терминала
-# Чтобы установить Rabbit-MQ:
+bash - ниже запуск для Терминала
+## Чтобы установить Rabbit-MQ:
 brew services start rabbitmq
 
 (чтобы из venv)
