@@ -1,16 +1,8 @@
-bash - ниже запуск для Терминала
-## Чтобы установить Rabbit-MQ:
-brew services start rabbitmq
+## Install Rabbit-MQ:
+```brew services start rabbitmq```
 
-(чтобы из venv)
-    # В консольке сначала cd в папку с проектом: затем:
-    source venv/bin/activate
-
-    # Далее запуск Worker'a:
-    celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists
-(чтобы без venv)
-    В консольке сначала cd в папку с проектом: затем:
-    celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists
+### Launch worker (either from venv or not):
+1. ```celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists```
 
 --concurrency - число дочерних процессов в Воркере, дефолт: 4
 -A - название проекта
