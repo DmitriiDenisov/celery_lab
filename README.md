@@ -2,7 +2,7 @@
 ```brew services start rabbitmq```
 
 ### Launch worker (either from venv or not):
-1. ```celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists```
+```celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists```
 
 --concurrency - число дочерних процессов в Воркере, дефолт: 4
 -A - название проекта
