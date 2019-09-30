@@ -13,11 +13,3 @@
 Ссылка на RabbitMQ:
 http://127.0.0.1:15672/#/queues
 Логин и пароль: guest
-
-Examples of requests:
-
-http://127.0.0.1:5000/email_and_sms
-
-http://127.0.0.1:5000/stupid-task
-
-http://127.0.0.1:5000/home
