@@ -1,6 +1,6 @@
 import time
 
-from celery_lab.celery import app
+from celery_lab.celery_settings import app
 from celery_lab.functions import sum_of_list, function_gener
 from redis import StrictRedis
 
