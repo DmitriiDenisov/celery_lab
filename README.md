@@ -23,6 +23,13 @@ Just an example how to launch worker:
 
 -Q - list queues you want to listen to. For example, -Q SMS,email or -Q SMS,email,hard_task
 
+### Remote brocker:
+Change in config.py file: 
+
+``` celery_broker_url = 'amqp://{user}:{password}@{ip}' ```
+For example:
+``` celery_broker_url = 'amqp://one_user:12345@35.202.136.165' ```
+
 ### Reminder about RabbitMQ:
 https://github.com/DmitriiDenisov/rabbitmq_lab
 
