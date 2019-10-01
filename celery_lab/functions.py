@@ -1,4 +1,3 @@
-
 from numpy import random
 from tqdm import tqdm
 
@@ -22,7 +21,3 @@ def sum_of_list(whole_list):
 if __name__ == '__main__':
     whole_list = function_gener(10000, 1500)
     sum_ = sum_of_list(whole_list)
-
-
-
-
