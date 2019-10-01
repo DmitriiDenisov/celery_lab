@@ -1,5 +1,5 @@
 ## Celery lab
-This repo shows example how to interacte with celery and RabbitMQ
+This repo shows example how to interact with celery and RabbitMQ
 
 ### Description of Lab:
 `celery_lab/web/app.py` - publish message to one of the following queues: email, SMS or hard_task
