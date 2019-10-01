@@ -3,9 +3,13 @@ This repo shows example how to interacte with celery and RabbitMQ
 
 ### Description of Lab:
 `celery_lab/web/app.py` - publish message to one of the following queues: email, SMS or hard_task
+
 `celery_lab/celery.py` - entry point, it is running by default once you launch worker
+
 `celery_lab/functions.py` - file with functions for testing perfomance
+
 `celery_lab/tasks.py` - wrapped functions which are called by celery once it receives message from queue in Rabbit
+
 `config.py` - it is imported from celery.py
 
 ### Launch worker (either from venv or not):
