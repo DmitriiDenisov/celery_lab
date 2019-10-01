@@ -1,4 +1,5 @@
 celery_broker_url = 'amqp://localhost'
+# celery_broker_url = 'amqp://dmitry:12345@35.202.136.165' # !!!FOR REMOTE CONNECTION!
 celery_imports = ['celery_lab.tasks']
 
 # celery_task_routes = {
