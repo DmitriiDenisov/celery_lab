@@ -1,7 +1,7 @@
-## Celery lab
+# Celery lab
 This repo shows example how to interact with celery and RabbitMQ
 
-### Description of Lab:
+## Description of Lab:
 `celery_lab/web/app.py` - publish message to one of the following queues: email, SMS or hard_task. It does in appropriate way to celery, so you won't be able to publish via web-interface because celery won't understand this
 
 `celery_lab/celery.py` - entry point, it is running by default once you launch worker
@@ -12,7 +12,7 @@ This repo shows example how to interact with celery and RabbitMQ
 
 `config.py` - it is imported from celery.py
 
-### Launch worker (either from venv or not):
+## Launch worker (either from venv or not):
 Just an example how to launch worker:
 
 ```celery worker --concurrency 3 -A celery_lab.celery_settings -Q SMS,email```
@@ -23,7 +23,7 @@ Just an example how to launch worker:
 
 -Q - list queues you want to listen to. For example, -Q SMS,email or -Q SMS,email,hard_task
 
-### Remote brocker:
+## Remote broker:
 Change in config.py file: 
 
 ``` celery_broker_url = 'amqp://{user}:{password}@{ip}' ```
@@ -31,6 +31,6 @@ Change in config.py file:
 For example:
 ``` celery_broker_url = 'amqp://one_user:12345@35.202.136.165' ```
 
-### Reminder about RabbitMQ:
+## Reminder about RabbitMQ:
 https://github.com/DmitriiDenisov/rabbitmq_lab
 
