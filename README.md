@@ -2,7 +2,7 @@
 This repo shows example how to interact with celery and RabbitMQ
 
 ## Description of Lab:
-`celery_lab/web/app.py` - publish message to one of the following queues: email, SMS or hard_task. It does in appropriate way to celery, so you won't be able to publish via web-interface because celery won't understand this
+`celery_lab/publish_random_message.py` - publish message to one of the following queues: email, SMS or hard_task. It does in appropriate way to celery, so you won't be able to publish via web-interface because celery won't understand this
 
 `celery_lab/celery.py` - entry point, it is running by default once you launch worker
 
