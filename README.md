@@ -27,6 +27,7 @@ Just an example how to launch worker:
 Change in config.py file: 
 
 ``` celery_broker_url = 'amqp://{user}:{password}@{ip}' ```
+
 For example:
 ``` celery_broker_url = 'amqp://one_user:12345@35.202.136.165' ```
 
