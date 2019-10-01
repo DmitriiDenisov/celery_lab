@@ -18,7 +18,9 @@ Just an example how to launch worker:
 ```celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists```
 
 --concurrency - number of concurrent processes, default: 4
+
 -A - name of project. In our case it is celery_lab
+
 -Q - list queues you want to listen to. For example, -Q SMS,email or -Q SMS,email,hard_task
 
 ### Reminder about RabbitMQ:
