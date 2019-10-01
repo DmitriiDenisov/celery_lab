@@ -14,6 +14,7 @@ This repo shows example how to interacte with celery and RabbitMQ
 
 ### Launch worker (either from venv or not):
 Just an example how to launch worker:
+
 ```celery worker --concurrency 2 -A celery_lab -Q lab.generate_and_sum_of_lists```
 
 --concurrency - number of concurrent processes, default: 4
